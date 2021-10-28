@@ -6,7 +6,8 @@ on (e.emp_no = s.emp_no);
 
 -- #2
 select first_name, last_name, hire_date
-from employees;
+from employees
+where hire_date between '1986-01-01' and '1986-12-31';
 
 -- #3
 select e.first_name, e.last_name, d.dept_no, dep.dept_name, d.emp_no
